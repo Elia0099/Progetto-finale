@@ -1,0 +1,17 @@
+Link utili:
+https://developer.brawlstars.com/#/   (API Brawl Stars)
+https://whatismyipaddress.com/it/il-mio-ip   (Ip Address)
+
+Codici Giocatore da poter provare nel programma:
+29PV28GJO
+ULYUPVU
+UOOGLUOL
+JPLCOVL
+VUYOCUOR
+QU2GR20
+P899JRCQ
+
+Prima di avviare il programma seguire i seguenti passaggi:
+1- Aprire il video "documentazione" presente nella cartella
+2-Seguire i passaggi indicati nel video
+3-Apri il programma con Visual Studio 2022
