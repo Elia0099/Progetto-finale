@@ -1,0 +1,31 @@
+﻿@page
+@model RegisterModel
+@{
+    ViewData["Title"] = "Register";
+}
+
+
+<link rel="stylesheet" href="~/css/site2.css" />
+<body>
+<div class="container">
+    <input type="checkbox" id="check">
+    <div class="registration form">
+        <header>Signup</header>
+            <form asp-route-returnUrl="@Model.ReturnUrl" method="POST" class="register-form" id="register-form">
+               <input asp-for="Input.Email"  autocomplete="username" placeholder="Your Email" />
+               <span asp-validation-for="Input.Email" class="text-danger"></span>
+           <label for="pass"><i class="zmdi zmdi-lock"></i></label>
+            <input asp-for="Input.Password" class="form-control" autocomplete="new-password" aria-required="true" placeholder="Password" />
+                <input asp-for="Input.ConfirmPassword" class="form-control" autocomplete="new-password" aria-required="true" placeholder="Repeat your password" />
+                <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
+                <input type="submit" name="signup" id="signup" class="form-submit" value="Register" />
+        </form>
+        <div class="signup">
+            <span class="signup">
+                Already have an account?
+                <a asp-page="/Account/Login">Login</a>
+            </span>
+        </div>
+    </div>
+</div>
+</body>

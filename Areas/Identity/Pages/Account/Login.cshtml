@@ -1,0 +1,30 @@
+﻿@page
+@model LoginModel
+
+@{
+    ViewData["Title"] = "Log in";
+}
+<link rel="stylesheet" href="~/css/site2.css" />
+
+<div class="container">
+    <input type="checkbox" id="check">
+    <div class="login form">
+        <header>Login</header>
+           <form method="POST" id="login-form">
+            <input asp-for="Input.Email" type="text" autocomplete="username" placeholder="Enter your email" />
+            <span asp-validation-for="Input.Email" class="text-danger"></span>
+            <input asp-for="Input.Password" type="password" autocomplete="current-password" placeholder="Enter your password" />
+            <span asp-validation-for="Input.Password" class="text-danger"></span>
+            <input asp-for="Input.RememberMe" style="width : 20px; height : 20px;" type="checkbox" name="remem ber-me" id="remember-me" />
+            <label for="remember-me" class="label-agree-term">Remember me</label>
+           
+            <input type="submit" name="signin" id="signin" class="form-submit" value="Log in" />
+        </form>
+        <div class="signup">
+            <span class="signup">
+                Don't have an account?
+                <a asp-page="/Account/Register">Register</a>
+            </span>
+        </div>
+    </div>
+</div>
